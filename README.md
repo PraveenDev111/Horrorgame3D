@@ -1,4 +1,4 @@
-<h1>This repository contains the website of Masona Horror 3D game. 
+<h1>This repository contains the website of Mahasona Horror 3D game. 
 </h1>
 
 
@@ -6,7 +6,7 @@
 
 <ol>
   <li>Praveen</li>
-  <li></li>
+  <li>MK Lakshitha</li>
   <li></li>
   <li></li>
   <li></li>
