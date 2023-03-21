@@ -1784,19 +1784,7 @@ ul.simplefilter {
 	background-image: url(../images/mahasona1.jpeg);
 }
 
-.glow {
-	font-size: 80px;
-	color: #fff !important;
-	text-align: center;
-	animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
-	from {
-	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFCE27, 0 0 40px #FFCE27, 0 0 50px #FFCE27, 0 0 60px #FFCE27, 0 0 70px #FFCE27;
-	}
-	
-	to {
-	  text-shadow: 0 0 20px #fff, 0 0 30px #FE5A0D, 0 0 40px #FE5A0D, 0 0 50px #FE5A0D, 0 0 60px #FE5A0D, 0 0 70px #FE5A0D, 0 0 80px #FE5A0D;
-	}
-  }
+.glow{
+	color: white !important;
+	text-shadow: 2px 2px 20px #fff200 !important;
+}
