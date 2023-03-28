@@ -305,7 +305,7 @@ body{
 /*-- //slider --*/
 /*-- w3layouts-banner-info --*/
 .w3layouts-banner-info {
-    padding: 8em 0;
+    padding: 8em 0 2em;
 }
 .banner_text {
     text-align: center;
