@@ -46,6 +46,10 @@
 
     <link rel="stylesheet" href="css/forum.css">
 
+	
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
   
 </head>
 <body>
@@ -196,32 +200,46 @@
 				<div class="col-md-10">
 					<h2 class="txt_newPosts">New posts</h2>
 					<div class="postContent">
-						<div class="card">
-							<div class="card-body">
-							  <h5 class="card-title">Special title treatment</h5>
-							  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							  <a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						  </div>
-						  <div class="card">
-							<div class="card-body">
-							  <h5 class="card-title">Special title treatment</h5>
-							  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							  <a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						  </div>
-						  <div class="card">
-							<div class="card-body">
-							  <h5 class="card-title">Special title treatment</h5>
-							  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							  <a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						  </div>
-						  <div class="card">
-							<div class="card-body">
-							  <h5 class="card-title">Special title treatment</h5>
-							  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							  <a href="#" class="btn btn-primary">Go somewhere</a>
+						<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+							<div class="splide__track">
+								  <ul class="splide__list">
+									  <li class="splide__slide">
+										<div class="card">
+											<div class="card-body">
+											  <h5 class="card-title">Special title treatment</h5>
+											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+											  <a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										  </div>
+									  </li>
+									  <li class="splide__slide">
+										<div class="card">
+											<div class="card-body">
+											  <h5 class="card-title">Special title treatment</h5>
+											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+											  <a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										  </div>
+									  </li>
+									  <li class="splide__slide">
+										<div class="card">
+											<div class="card-body">
+											  <h5 class="card-title">Special title treatment</h5>
+											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+											  <a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										  </div>
+									  </li>
+									  <li class="splide__slide">
+										<div class="card">
+											<div class="card-body">
+											  <h5 class="card-title">Special title treatment</h5>
+											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+											  <a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										  </div>
+									  </li>
+								  </ul>
 							</div>
 						  </div>
 					</div>
@@ -234,10 +252,57 @@
 	</div>
     <!--==========Content section==========-->
     <div class="container-fluid " style="margin-top: 0em;">
-		
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h2 class="txt_submission">BE AN EXCLUSIVE 50 ZONES MEMBER AND RECEIVE
+					NEWS AND UPDATES TO YOUR EMAIL</h2>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
     </div>
     <!--==========New post section==========-->
-    <!--==========registration section=========-->
+    <!--==========news letter registration section=========-->
+	<div class="container-fluid " style="margin-top: 0em;">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="subscribe">
+					<div class="form">
+						<input type="email" class="form__email" placeholder="Enter your email address" />
+						<button class="form__button">Send</button>
+					</div>
+					<div class="notice">
+						<input type="checkbox">
+						<span class="notice__copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+    </div>
     <!--==========footer section=========-->
+	<script>
+		var splide = new Splide( '.splide', {
+  perPage: 3,
+  gap    : '0rem',
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.5rem',
+	  
+      
+    },
+    480: {
+      perPage: 1,
+      gap    : '.3rem',
+      
+    },
+  },
+} );
+
+
+splide.mount();
+	</script>
 </body>
 </html>
