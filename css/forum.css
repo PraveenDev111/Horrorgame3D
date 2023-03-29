@@ -98,20 +98,48 @@ body{
     margin-bottom: 1rem;
 }
 
+.icon_posts{
+    color: #000000;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.btn_veiw, .btn_Comments, .btn_Addnew{
+    margin-top: 1rem;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn_Addnew{
+    align-self: flex-end;
+}
+
 .postContent{
     display: flex;
+    justify-content: center;
 }
 
 .postSection{
     background-color: transparent;
     backdrop-filter: blur(1rem);
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+    
+}
+
+.Crd{
+    justify-content: center;
+}
+.crd_li{
+    width: calc((100%  / 3) - 1rem);
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
 
 .card{
-    width: 90%;
+    width: fit-content;
+    margin-left: 0.5rem;
+    margin-right: 0;
     padding: 5rem 2.5rem;
-    margin-left: 1rem;
     background: rgba( 255, 255, 255, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 16px );
@@ -123,7 +151,7 @@ body{
 }
 
 .cdl{
-    background-color: rgba(225,225,225,0.1);
+    background-color: rgba(252, 252, 252, 0.1);
 }
 
 .txt_submission{
