@@ -101,10 +101,46 @@ html {
 /*post table*/
 .td_img{
     width: 10rem;
+    padding: 1rem;
 }
+
 .img_tableUser{
     width: inherit;
     height: 100%;
+    ;
+}
+
+.td_subDescription{
+    color: #d1dbe4;
+    font-size: medium;
+    margin: 0;
+    padding-left: 2rem;
+
+}
+
+.td_title{
+    color: #ffffff;
+    font-size: larger;
+    margin-top: 2px;
+    padding-left: 2rem;
+}
+
+.table_content{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+.table_content_tr{
+    background-color: transparent;
+    border-spacing: 5em;
+    outline: 0.2rem solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+
+.table_content{
+    background-color: transparent; 
+    width: 100% ;
 }
 
 .txt_newPosts{
@@ -121,16 +157,25 @@ html {
 }
 
 .icon_posts{
-    color: #000000;
+    color: #ffffff;
     font-size: 2rem;
     align-items: center;
 }
 
+.icon_posts:hover{
+    color: #d02424;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    
+}
+
 .btn_veiw, .btn_Comments, .btn_Addnew{
-    margin-top: 1rem;
+
     background-color: transparent;
     border-color: transparent;
 }
+
+
 
 .btn_Addnew{
     align-self: flex-end;
@@ -161,7 +206,7 @@ html {
     width: fit-content;
     margin-left: 0.5rem;
     margin-right: 0;
-    padding: 5rem 2.5rem;
+    padding: 2rem 2.5rem;
     background: rgba( 255, 255, 255, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 16px );
@@ -176,6 +221,65 @@ html {
     background-color: rgba(252, 252, 252, 0.1);
 }
 
+.profile{
+    display: flex;
+}
+.profile_img{
+    font-size: 40px; 
+    margin-right: 1rem;
+}
+.post_userName{
+    padding-top: 0.3rem;
+}
+.post_publicDate{
+    margin-top: 2px;
+}
+
+.post_feedBacks{
+    display: flex;
+    margin-top: 1rem;
+}
+/*like button*/
+
+.like-content {
+    display: inline-block;  
+    margin-bottom: 0px;
+}
+
+.like-content .btn-secondary {
+	  display: block;
+      
+	  margin: 0px auto 0px 20px;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px 17px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+	  transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+	  margin-right: 5px;
+}
+.animate-like {
+	animation-name: likeAnimation;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
 .txt_submission{
     color: #c60000;
     text-align: center;
@@ -201,7 +305,9 @@ html {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: white;
+	background-image: url("../images/bg113.png");
+    background-size: 100%;
+
 	width: 100%;
 	height: 300px;
 	border-radius: 10px;
