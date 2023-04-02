@@ -2,6 +2,28 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .60rem;
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #CAD3DB;
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #43484d;
+  }
+  
+
+
+  
 .banner_text h2 {
     color: #FFFFFF;
     font-size: 6em;
@@ -81,7 +103,7 @@ body{
     width: 10rem;
 }
 .img_tableUser{
-    width: 10rem;
+    width: inherit;
     height: 100%;
 }
 
@@ -225,3 +247,7 @@ body{
 .notice {
 	width: 345px;
 }
+
+
+
+
