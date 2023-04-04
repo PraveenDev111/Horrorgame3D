@@ -2,6 +2,11 @@
 Author: W3layout
 Author URL: http://w3layouts.com
 --*/
+@font-face {
+	font-family: 'Sinhalafont';
+	src: url(/fonts/sinh.TTF);
+}
+
 body a{
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -313,7 +318,7 @@ body{
 .banner_text h3 {
     color: #FFFFFF;
     font-size: 11em;
-	font-family: 'Metal Mania' !important;
+	font-family: 'Metal Mania' ;
 	letter-spacing: 2.2vb !important;	
 	text-shadow: 3px 3px 15px #000000;
     margin: 0;
@@ -1204,7 +1209,7 @@ ul.simplefilter {
 /*-- footer --*/ 
 .footer{
 	background: #333;
-	padding:4em 0;
+	padding: 3em 0;
 }  
 .footer-title h3 {
     font-size: 1.5em;
