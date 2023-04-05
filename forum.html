@@ -42,14 +42,15 @@
 	</script> 
 
 
-
+<!--forum css-->
     <link rel="stylesheet" href="css/forum.css">
-
-	
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
-  
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+<!--Comment section css-->
+	<link rel="stylesheet" href="css/Comment_Secssion.css">
+	
 </head>
 <body>
     <!--==========header section===========-->
@@ -99,13 +100,15 @@
 								<div class="callbacks_container">
 									<ul class="rslides callbacks callbacks1" id="slider4">
 										<li>
-											<div class="banner_text">
-												<h2>DISCUSSIONS & POSTS</h2>
+											<div class="banner_text" data-aos="fade-up" data-aos-duration="3000">
+												<h2 >DISCUSSIONS & POSTS</h2>
 												<p>Explore the forum below and find answers to all of your questions.</p>
 											</div>
 										</li>
 									</ul>
 								</div>
+								
+							
 								<div class="clearfix"> </div>
 								<script src="js/responsiveslides.min.js"></script>
 								<script>
@@ -136,41 +139,191 @@
                     
 				</div>
 			</div>
-            <div class="container-fluid AddNewPostSection">
-				<input type="button" value="Create new post" id="btn_addNewPost">
-			</div>
+           
 		</div>
 	</div>
 	<!-- //banner -->
+	<!--==========comment section==========-->
+	<div class="comment_section" id="Comment_section">
+		<div class="container grid" style="background-color: aliceblue;"id="scrolling">
+			<div class="row">
+				<div class="col" >
+					<div class="media g-mb-30 media-comment">
+						<img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Image Description">
+						<div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+						  <div class="g-mb-15">
+							<h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+							<span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+						  </div>
+					
+						  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+							felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+					
+						  <ul class="list-inline d-sm-flex my-0">
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+								178
+							  </a>
+							</li>
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+								34
+							  </a>
+							</li>
+							<li class="list-inline-item ml-auto">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+								Reply
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="media g-mb-30 media-comment">
+						<img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Image Description">
+						<div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+						  <div class="g-mb-15">
+							<h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+							<span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+						  </div>
+					
+						  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+							felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+					
+						  <ul class="list-inline d-sm-flex my-0">
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+								178
+							  </a>
+							</li>
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+								34
+							  </a>
+							</li>
+							<li class="list-inline-item ml-auto">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+								Reply
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col">
+					<div class="media g-mb-30 media-comment">
+						<img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Image Description">
+						<div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+						  <div class="g-mb-15">
+							<h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+							<span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+						  </div>
+					
+						  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+							felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+					
+						  <ul class="list-inline d-sm-flex my-0">
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+								178
+							  </a>
+							</li>
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+								34
+							  </a>
+							</li>
+							<li class="list-inline-item ml-auto">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+								Reply
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="media g-mb-30 media-comment">
+						<img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Image Description">
+						<div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+						  <div class="g-mb-15">
+							<h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+							<span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+						  </div>
+					
+						  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+							felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+					
+						  <ul class="list-inline d-sm-flex my-0">
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+								178
+							  </a>
+							</li>
+							<li class="list-inline-item g-mr-20">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+								34
+							  </a>
+							</li>
+							<li class="list-inline-item ml-auto">
+							  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+								<i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+								Reply
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			
+		</div>
+	</div>
     <!--==========Main secitio==========-->
 	<div class="about" id="about"> 
 		<div class="container grid postSection">
 			
 				<div class="d">
 					<table class="table_content">
-						  <tr class="table_content_tr">
+						  <tr class="table_content_tr" data-aos="fade-up" data-aos-duration="2500">
 							<td class="td_img"><img src="/images/112.jpg" alt="" class="img_tableUser"></td>
 							<td><p class="td_title">Community content</p><span class="td_subDescription"> Describe your forum category. Engage your audience...</span></td>
 
 							<td><button class="btn_veiw"><i class="ri-eye-fill icon_posts"></i></button></td>
 							<td><button class="btn_Comments"><i class="ri-message-2-fill icon_posts"></i></button></td>
-							<td><button class="btn_Addnew"><i class="ri-add-circle-fill icon_posts"></i></button></td>
+							
 						  </tr>
-						  <tr class="table_content_tr">
+						  <tr class="table_content_tr" data-aos="fade-up" data-aos-duration="2500">
 							<td class="td_img"><img src="/images/112.jpg" alt="" class="img_tableUser"></td>
 							<td><p class="td_title">Community content</p><span class="td_subDescription"> Add your category description........</span></td>
 							
 							<td><button class="btn_veiw"><i class="ri-eye-fill icon_posts"></i></button></td>
 							<td><button class="btn_Comments"><i class="ri-message-2-fill icon_posts"></i></button></td>
-							<td><button class="btn_Addnew"><i class="ri-add-circle-fill icon_posts"></i></button></td>
+							
 						  </tr>
-						  <tr class="table_content_tr">
+						  <tr class="table_content_tr" data-aos="fade-up" data-aos-duration="2500">
 							<td class="td_img"><img src="/images/112.jpg" alt="" class="img_tableUser"></td>
 							<td><p class="td_title">Community content</p><span class="td_subDescription"> Add your category description here. Be sure to.....</span></td>
 							
 							<td><button class="btn_veiw"><i class="ri-eye-fill icon_posts"></i></button></td>
 							<td><button class="btn_Comments"><i class="ri-message-2-fill icon_posts"></i></button></td>
-							<td><button class="btn_Addnew"><i class="ri-add-circle-fill icon_posts"></i></button></td>
+							
 						  </tr>	
 					  </table>
 				</div>
@@ -179,7 +332,7 @@
 
 			<div class="container grid">
 				
-				<div class="">
+				<div class="" data-aos="fade-up" data-aos-duration="3000">
 					<h2 class="txt_newPosts">New posts</h2>
 					<div class="postContent">
 						<div class="splide" role="group" aria-label="Splide Basic HTML Example">
@@ -198,7 +351,12 @@
 											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 											  
 											  <div class="post_feedBacks">
-												<div class="post_readMore"><a href="#" class="btn_readMore">Read more</a></div>
+												<div class="readMore">
+													<button class="btn_readMore">
+														Read More&nbsp;
+														<i class="ri-arrow-right-circle-fill "></i>
+													</button>
+												</div>
 												<div class="p_likes like-content">
 													<button class="btn-secondary like-review">
 														<i class="fa fa-heart" aria-hidden="true"></i> Like
@@ -222,7 +380,12 @@
 											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 											  
 											  <div class="post_feedBacks">
-												<div class="post_readMore"><a href="#" class="btn_readMore">Read more</a></div>
+												<div class="readMore">
+													<button class="btn_readMore">
+														Read More&nbsp;
+														<i class="ri-arrow-right-circle-fill "></i>
+													</button>
+												</div>
 												<div class="p_likes like-content">
 													<button class="btn-secondary like-review">
 														<i class="fa fa-heart" aria-hidden="true"></i> Like
@@ -246,7 +409,12 @@
 											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 											  
 											  <div class="post_feedBacks">
-												<div class="post_readMore"><a href="#" class="btn btn_readMore">Read more</a></div>
+												<div class="readMore">
+													<button class="btn_readMore">
+														Read More&nbsp;
+														<i class="ri-arrow-right-circle-fill "></i>
+													</button>
+												</div>
 												<div class="p_likes like-content">
 													<button class="btn-secondary like-review">
 														<i class="fa fa-heart" aria-hidden="true"></i> Like
@@ -270,7 +438,12 @@
 											  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 											  
 											  <div class="post_feedBacks">
-												<div class="post_readMore"><a href="#" class="btn_readMore">Read more</a></div>
+												<div class="readMore">
+													<button class="btn_readMore">
+														Read More&nbsp;
+														<i class="ri-arrow-right-circle-fill "></i>
+													</button>
+												</div>
 												<div class="p_likes like-content">
 													<button class="btn-secondary like-review">
 														<i class="fa fa-heart" aria-hidden="true"></i> Like
@@ -292,7 +465,7 @@
 		</div>
 	</div>
     <!--==========Content section==========-->
-    <div class="container grid" style="margin-top: 0em;">
+    <div class="container grid" style="margin-top: 0em;" data-aos="fade-up" data-aos-duration="2000">
 		<div class="">
 			<div class="">
 				<h2 class="txt_submission">BE AN EXCLUSIVE 50 ZONES MEMBER AND RECEIVE
@@ -302,7 +475,7 @@
     </div>
     <!--==========New post section==========-->
     <!--==========news letter registration section=========-->
-	<div class="container grid " style="margin-top: 0em;">
+	<div class="container grid " style="margin-top: 3em; margin-bottom: 7rem;" data-aos="fade-up" data-aos-duration="3000">
 		<div class="">
 			<div class="">
 				<div class="subscribe">
@@ -318,9 +491,121 @@
 			</div>
 		</div>
     </div>
-    <!--==========footer section=========-->
+
+	
+    <!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 amet-sed"> 
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div> 
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+				
+				<div class="col-md-4 amet-sed amet-medium">
+					<div class="footer-title">
+						<h3>Twitter Feed</h3>
+					</div> 
+					<p><a href="#">http://example.com</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum eget placerat. </p>
+					<p><a href="#">http://mail.com</a> Sed tincidunt lorem sed velit fermentum eget placerat. Lorem ipsum dolor sit, consectetur adipiscing elit. </p>
+				</div>
+				<div class="col-md-4 amet-sed ">
+					<div class="footer-title">
+						<h3>Follow Us</h3>
+					</div> 
+					<div class="agileinfo-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+					<div class="support">
+						<form action="#" method="post">
+							<input type="email" placeholder="Enter email...." required=""> 
+							<input type="submit" value="Subscribe" class="botton">
+						</form> 
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer --> 
 
 
 	<script src="js/forum.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+
+
+
+
+
+
+
+  <!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<p class="footer-class">© 2020 Gaming Store . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+	</div>
+	<!-- //copyright -->
+	<script src="js/jarallax.js"></script>
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOut' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- Tabs-JavaScript -->
+	<script src="js/jquery.filterizr.js"></script>
+		<script src="js/controls.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+	<!-- //Tabs-JavaScript -->
+	<!-- PopUp-Box-JavaScript -->
+		<script src="js/jquery.chocolat.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-item a').Chocolat();
+			});
+		</script>
+	<!-- //PopUp-Box-JavaScript -->
+</body>	
+</html>
+
 </body>
 </html>
