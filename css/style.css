@@ -1208,8 +1208,13 @@ ul.simplefilter {
 /*-- //contact --*/
 /*-- footer --*/ 
 .footer{
+<<<<<<< Updated upstream
 	background: #333;
 	padding: 3em 0;
+=======
+	background: linear-gradient(to right, #0D0D0D, #660000);
+	padding:4em 0;
+>>>>>>> Stashed changes
 }  
 .footer-title h3 {
     font-size: 1.5em;
@@ -1271,7 +1276,7 @@ ul.simplefilter {
 }
 .support {
     margin: 1em 0em 0 0;
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(10, 1, 1);
     padding: 1em 1em;
 } 
 /*-- social-icons --*/
@@ -1296,6 +1301,13 @@ ul.simplefilter {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+.agileinfo-social-grids ul li a i.fa-brands{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
 .agileinfo-social-grids ul li a i.fa.fa-facebook:hover {
     color: #3b5998;
 }
@@ -1305,19 +1317,22 @@ ul.simplefilter {
 .agileinfo-social-grids ul li a i.fa.fa-twitter:hover{
 	color: #55acee;
 }
-.agileinfo-social-grids ul li a i.fa.fa-rss{
+.agileinfo-social-grids ul li a i.fa-brands fa-linkedin{
 	margin:0 1em 0 0;
 }
-.agileinfo-social-grids ul li a i.fa.fa-rss:hover{
+.agileinfo-social-grids ul li a i.fa-brands fa-linkedin:hover{
 	color: #f26522;
 }
-.agileinfo-social-grids ul li a i.fa.fa-vk:hover{
+.agileinfo-social-grids ul li a i.fa-brands fa-instagrams{
+	margin:0 1em 0 0;
+}	
+.agileinfo-social-grids ul li a i.fa-brands fa-instagrams:hover{
 	color: #45668e;
 }
 /*-- //footer --*/
 /*-- copyright --*/
 .copyright{
-	background:#212121;
+	background:#080000;
 	padding:1em 0;
 }
 .copyright p{
