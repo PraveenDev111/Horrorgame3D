@@ -35,6 +35,6 @@
 
 ###
 
-<p align="left">MK Lakshitha<br>Praveen<br>BVGC Boraluwa<br>KGSSU Weerasinghe<br>AHSBKD Silva<br>KDRS Wijekoon<br>Miradha</p>
+<p align="left">MK Lakshitha<br>Praveen<br>BVGC Boraluwa<br>KGSSU Weerasinghe<br>AHSBKD Silva<br>KDRS Wijekoon<br>DMM Gunasekara</p>
 
 ###
