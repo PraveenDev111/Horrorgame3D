@@ -6,6 +6,7 @@ html, body{
 
 img{
 	width: 100%;
+  height: 100%;
 }
 .login {
     height: 100vh;
@@ -72,6 +73,9 @@ img{
 	background: linear-gradient(-45deg, #dcd7e0, #fff);
 }
 
+.contact{
+  
+}
 
 .contact .rmb {
     position: absolute;
@@ -91,10 +95,10 @@ img{
 .contact .btn1 {
     border: none;
     padding: 15px 70px;
-    border-radius: 8px;
+    border-radius: 0px;
     display: block;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color: #bc030372;
     color: #ffffff;
     font-weight: bold;
@@ -188,3 +192,7 @@ img{
     display: none;
   }
     
+.sign_in_with_google{
+  margin-top: 2.5rem;
+  border-radius: 70px;
+}
