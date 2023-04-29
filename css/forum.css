@@ -33,6 +33,7 @@ html {
     margin: 0;
     font-weight: 100;
     text-transform: uppercase;
+    z-index: 90;
 }
 
 .forum{
@@ -50,49 +51,6 @@ html {
 
 
 /* main section */
-.AddNewPostSection{
- background-color: transparent;
- margin-top: 3rem;
- margin-right: 1rem;
- float: right;
-
-}
-#btn_addNewPost {
-    
-  align-items: center;
-  background-image: linear-gradient(144deg,#ff4040, #6c0722 50%,#4f0000);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(252, 65, 65, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-#btn_addNewPost:active,
-#btn_addNewPost:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  #btn_addNewPost {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
 
 
 
@@ -207,7 +165,7 @@ html {
     margin-left: 0.5rem;
     margin-right: 0;
     padding: 2rem 2.5rem;
-    background: rgba( 255, 255, 255, 0.6 );
+    background: aliceblue;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 16px );
     -webkit-backdrop-filter: blur( 16px );
@@ -239,6 +197,36 @@ html {
     display: flex;
     margin-top: 1rem;
 }
+
+/*read more button*/
+.read_content{
+    display: inline-block;  
+    margin-bottom: 0px;
+}
+.btn_readMore  {
+    display: block;
+    margin: 7px auto 0px 0px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(255, 255, 255);
+    padding: 10px 17px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.read_content .btn_readMore:hover {
+    transform: translateY(-3px);
+}
+
+
+
 /*like button*/
 
 .like-content {
@@ -248,8 +236,7 @@ html {
 
 .like-content .btn-secondary {
 	  display: block;
-      
-	  margin: 0px auto 0px 20px;
+    margin: 7px auto 0px 20px;
     text-align: center;
     background: #ed2553;
     border-radius: 3px;
@@ -280,6 +267,8 @@ html {
   0%   { transform: scale(30); }
   100% { transform: scale(1); }
 }
+
+
 .txt_submission{
     color: #c60000;
     text-align: center;
@@ -357,3 +346,72 @@ html {
 
 
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 25vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #ffffff;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(54, 54, 54);
+    float: right;
+    font-size: 28px;
+    font-weight:700;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ffffff;
+    color: rgb(67, 67, 67);
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #ffffff;
+    color: rgb(67, 67, 67);
+  }
