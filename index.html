@@ -10,13 +10,24 @@
     
     <style>
         .container {
-
   height: 50vh;
 }
 
     </style>
 </head>
 <body bgcolor="black">
-    <div class="container"></div><center><span style="color:white; font-size: 3em; padding: 15px; border-radius: 10px;margin:15px; border: 2px solid white;" >Follow link to hosted site at infintyfree. <a href="http://mahasona3d.epizy.com">Click here.</a></span></center>
+    <div class="container"></div><center><span style="color:white; font-size: 2em; padding: 15px; border-radius: 10px;margin:15px; border: 2px solid white;" >It will automatically redirect to our site</span></center>
     </div></body>
 </html>
+<script>// Replace "your-url-here" with the URL you want to redirect to
+var redirectUrl = "http://mahasona3d.epizy.com";
+
+// Replace "number-of-seconds" with the number of seconds to wait before redirecting
+var redirectDelay = 0;
+
+// Wait for the specified number of seconds
+setTimeout(function() {
+  // Redirect to the specified URL
+  window.location.href = redirectUrl;
+}, redirectDelay * 1000);
+</script>
